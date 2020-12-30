@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/faxnug/config           # 公用
+#          search-paths:
+#            - foo
+#            - bar
+#          repos:
+#            simple: https://github.com/faxnug/simple
+#            special:
+#              pattern: special*/dev*, special*/test*
+#              uri: https://github.com/faxnug/special
+#              cloneOnStart: false
+#          clone-on-start: true
+  #            default-label: main
+  application:
+    name: configserver
+encrypt:
+  key: lileihehanmeimei
